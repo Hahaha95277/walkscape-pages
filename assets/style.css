@@ -1,44 +1,38 @@
 body {
   margin: 0;
-  padding: 0;
-  overflow: hidden;
+  height: 300vh; /* 為了產生滾動 */
   background: #000;
-  font-family: sans-serif;
+  overflow-x: hidden;
 }
 
-.parallax-scene {
+.parallax-container {
   position: relative;
-  width: 100%;
   height: 100vh;
   overflow: hidden;
   perspective: 1px;
-  perspective-origin: center;
-  background: #000;
 }
 
-/* 每一層的共通樣式 */
 .parallax-layer {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   will-change: transform;
+  object-fit: cover;
 }
 
-/* 層級設定（越近 z-index 越高） */
 .far {
-  transform: translateZ(0);
+  transform: translateZ(-1px) scale(2);
   z-index: 1;
 }
 
 .mid {
-  transform: translateY(10px);
+  transform: translateZ(-0.5px) scale(1.5);
   z-index: 2;
 }
 
 .front {
-  transform: translateY(20px);
+  transform: translateZ(0);
   z-index: 3;
 }
