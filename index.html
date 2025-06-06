@@ -1,21 +1,19 @@
 
 <!DOCTYPE html>
 <html lang="zh-Hant">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Walkscape</title>
-    <script type="module" crossorigin src="/walkscape-pages/assets/main.js"></script>
-    <link rel="stylesheet" href="/walkscape-pages/assets/style.css" />
-  </head>
-  <body>
-    <div id="root">Loading Walkscape...</div>
-    <div id="overlay" class="overlay hidden">
-      <div class="overlay-content">
-        <img id="overlay-img" src="" alt="Full View" />
-        <p id="overlay-caption"></p>
-        <button id="overlay-close">返回</button>
-      </div>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Walkscape 2.5D Demo</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <div class="scene">
+    <div class="layer far"></div>
+    <div class="layer mid"></div>
+    <div class="layer front"></div>
+    <div class="label">冰川高原｜白霧藏不住遠方的冷冽，我在無垠中尋找腳印。</div>
+  </div>
+  <script src="./assets/main.js"></script>
+</body>
 </html>
