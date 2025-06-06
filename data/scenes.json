@@ -1,1 +1,20 @@
-
+[
+  {
+    "id": "fjord_sunset_01",
+    "name": "峽灣日落",
+    "description": "風在峽灣深處低語，我聽見自己還沒說出口的話。",
+    "image": "./assets/fjord.jpg"
+  },
+  {
+    "id": "desert_ruins_02",
+    "name": "沙漠遺跡",
+    "description": "古老的石牆沉默無語，風沙卻記得所有故事。",
+    "image": "./assets/desert.jpg"
+  },
+  {
+    "id": "glacier_plateau_03",
+    "name": "冰川高原",
+    "description": "白霧藏不住遠方的冷冽，我在無垠中尋找腳印。",
+    "image": "./assets/glacier.jpg"
+  }
+]
