@@ -1,35 +1,33 @@
-/* 通用樣式 */
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: #111;
-  color: white;
   overflow: hidden;
+  background: #000;
+  font-family: sans-serif;
 }
 
-/* 2.5D 場景容器 */
 .parallax-scene {
   position: relative;
   width: 100%;
   height: 100vh;
-  perspective: 1000px;
   overflow: hidden;
+  perspective: 1px;
+  perspective-origin: center;
   background: #000;
 }
 
 /* 每一層的共通樣式 */
 .parallax-layer {
   position: absolute;
-  width: 100%;
-  height: auto;
   top: 0;
   left: 0;
-  will-change: transform;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  will-change: transform;
 }
 
-/* 層級設定（越近 z-index 越高）*/
+/* 層級設定（越近 z-index 越高） */
 .far {
   transform: translateZ(0);
   z-index: 1;
